@@ -1,7 +1,3 @@
-#name, #jobtitle {
-    
-}
-
 #github, #linkedin, #homepage {
     filter: invert(1) brightness(2);
     width: 50px;
@@ -13,7 +9,7 @@
     height: auto;
 }
 
-.image-link-wrapper img {
+.background-img {
     display: block;
     width: 100%;
     height: auto;
@@ -30,7 +26,20 @@
     text-align: left;
     padding: 10px;
     font-size: 1.5rem;
+    font-weight:500;
     z-index: 1;
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 12.5%;
+    height: auto;
+    padding-top: 1%;
+    padding-right: 1%;
+    color: white;
 }
 
 .text-justify{
