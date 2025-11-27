@@ -1,67 +1,172 @@
 ﻿<!DOCTYPE html>
 <html data-bs-theme="dark" lang="fr">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Discount Delirium</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="container pt-5">
-        <header class="container row">
-            <div class="col-md-8">
-                <h1 id="name">Christopher Ménard</h1>
-                <h3 data-i18n="job_title"></h3>
-            </div>
-            <div class="col-lg-4 d-flex flex-nowrap align-items-center gap-2">
-                <a class="" href="index.html"><img id="homepage" src="img/house_fill_icon.svg" alt="homepage"></a>
-                <a class="" href="https://www.linkedin.com/in/menard-christopher/"><img id="linkedin" src="img/linkedin_icon.svg" alt="linkedin"></a>
-                <a class="" href="https://github.com/ChristopherMenard"><img id="github" src="img/github_icon.svg" alt="github"></a>
-                <button class="btn btn-primary" onclick="setLanguage('fr')">Français</button>
-                <button class="btn btn-primary" onclick="setLanguage('en')">English</button>
-            </div>
-        </header>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+      rel="stylesheet"
+    />
 
-        <h1 class="container pt-5">Discount Delirium</h1>
-        <img class="image-projet img-fluid w-100" src="img/discount_banner.jpg" alt="Image de démonstration">
-        <p data-i18n="discount_desc1" class="fs-4 text text-justify container pt-5"></p>
-        <div class="container pt-3">
-            <h2 data-i18n="discount_title1" class="pt-5"></h2>
-            <h3 data-i18n="discount_title2" class="pt-4"></h3>
-            <p data-i18n="discount_desc2" class="fs-4 text text-justify"></p>
-            <div class="ratio ratio-16x9 mx-auto" style="max-width: auto;">
-                <video controls class="w-100 rounded shadow">
-                    <source src="video/video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+    <!-- Highlight.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="container pt-5">
+      <header class="container row">
+        <div class="col-md-8">
+          <h1 id="name">Christopher Ménard</h1>
+          <h3 data-i18n="job_title"></h3>
         </div>
-        
-        <div class="container pt-5">
-            <h3 data-i18n="discount_title3" class="pt-3">Le menu/navigation</h3>
-            <p data-i18n="discount_desc3" class="fs-4 text text-justify"></p>
-            <div class="ratio ratio-16x9 mx-auto" style="max-width: auto;">
-                <video controls class="w-100 rounded shadow">
-                    <source src="video/video2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <div class="col-lg-4 d-flex flex-nowrap align-items-center gap-2">
+          <a class="" href="index.html"
+            ><img id="homepage" src="img/house_fill_icon.svg" alt="homepage"
+          /></a>
+          <a class="" href="https://www.linkedin.com/in/menard-christopher/"
+            ><img id="linkedin" src="img/linkedin_icon.svg" alt="linkedin"
+          /></a>
+          <a class="" href="https://github.com/ChristopherMenard"
+            ><img id="github" src="img/github_icon.svg" alt="github"
+          /></a>
+          <button class="btn btn-primary" onclick="setLanguage('fr')">
+            Français
+          </button>
+          <button class="btn btn-primary" onclick="setLanguage('en')">
+            English
+          </button>
         </div>
-        <div class="container pt-5 pb-5">
-            <h3 data-i18n="discount_title4" class="text text-justify"></h3>
-            <p data-i18n="discount_desc4" class="fs-4 text text-justify"></p>
-            <p data-i18n="discount_desc5" class="fs-4 text text-justify"></p>
-            <div class="ratio ratio-16x9 mx-auto" style="max-width: auto;">
-                <video controls class="w-100 rounded shadow">
-                    <source src="video/video3.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+      </header>
+
+      <h1 class="container pt-5">Discount Delirium</h1>
+      <ul class="fs-4">
+        <li data-i18n="discount_info1"></li>
+        <li data-i18n="discount_info2"></li>
+        <li data-i18n="discount_info3"></li>
+        <li data-i18n="discount_info4"></li>
+        <li data-i18n="discount_info5"></li>
+        <li>
+          <a
+            href="https://christopher-menard.itch.io/discount-delirium"
+            data-i18n="discount_info6"
+          ></a>
+        </li>
+      </ul>
+
+      <img
+        class="image-projet img-fluid w-100"
+        src="img/discount_banner.jpg"
+        alt="Image de démonstration"
+      />
+
+      <p
+        data-i18n="discount_overview_desc"
+        class="fs-4 text text-justify container pt-5"
+      ></p>
+
+      <div class="container pt-3">
+        <h2 data-i18n="discount_title1" class="pt-5"></h2>
+        <h3 data-i18n="discount_title2" class="pt-4"></h3>
+        <p data-i18n="discount_desc2" class="fs-4 text text-justify"></p>
+        <div class="ratio ratio-16x9 mx-auto" style="max-width: auto">
+          <video controls class="w-100 rounded shadow">
+            <source src="video/video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
+      </div>
+
+      <div class="container pt-5">
+        <h3 data-i18n="discount_title3" class="pt-3">Le menu/navigation</h3>
+        <p data-i18n="discount_desc3" class="fs-4 text text-justify"></p>
+        <div class="ratio ratio-16x9 mx-auto" style="max-width: auto">
+          <video controls class="w-100 rounded shadow">
+            <source src="video/video2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="container pt-5 pb-5">
+        <h3 data-i18n="discount_title4" class="text text-justify"></h3>
+        <p data-i18n="discount_desc4" class="fs-4 text text-justify"></p>
+        <p data-i18n="discount_desc5" class="fs-4 text text-justify"></p>
+        <div class="ratio ratio-16x9 mx-auto" style="max-width: auto">
+          <video controls class="w-100 rounded shadow">
+            <source src="video/video3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li>
+            <button
+              class="nav-link code-link active"
+              onclick="changeCodeTab(0)"
+            >
+              Code 1
+            </button>
+          </li>
+          <li>
+            <button class="nav-link code-link" onclick="changeCodeTab(1)">
+              Code 2
+            </button>
+          </li>
+          <li>
+            <button class="nav-link code-link" onclick="changeCodeTab(2)">
+              Code 3
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane fade show active code-content" id="code1">
+          <pre><code class="language-cpp">
+#include <iostream> // Includes the iostream library for input/output operations
+
+int main() { // The main function, where program execution begins
+    std::cout << "Hello World!" << std::endl; // Prints "Hello World!" to the console
+    return 0; // Indicates successful program execution
+}
+      </code></pre>
+        </div>
+
+        <div class="tab-pane fade code-content" id="code2">
+          <pre><code class="language-csharp">
+using System; // Code 2
+namespace HelloWorld
+{
+
+}
+      </code></pre>
+        </div>
+
+        <div class="tab-pane fade code-content" id="code2">
+          <pre><code class="language-csharp">
+using System; // Code 3
+namespace HelloWorld
+{
+
+}
+      </code></pre>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
+  <script>
+    hljs.highlightAll();
+  </script>
 </html>
