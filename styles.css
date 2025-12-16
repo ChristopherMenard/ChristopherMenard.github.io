@@ -59,3 +59,8 @@
 .hide {
     display: none;
 }
+
+#name a {
+    color: white;
+    text-decoration-thickness: 1px;
+}
